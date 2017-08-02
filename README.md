@@ -5,16 +5,16 @@ Emits log4j events into AWS CloudWatch streams.
 
 ## Build
 
-    $ git clone git@github.com:Virtual-Instruments/cloudwatch-log4j-appender.git
+    $ git clone git@github.com:LucaFilipozzi/cloudwatch-log4j-appender.git
     $ cd CloudWatchAppender
     $ mvn install
 
 ## Usage
 ```
     <CloudWatchAppender name="CloudWatchAppender"
-                           awsLogGroupName="MyGroup"
-                           awsLogStreamName="CloudWatchAppender"
-                           awsLogStreamFlushPeriodInSeconds="5">
+                        awsLogGroupName="MyGroup"
+                        awsLogStreamName="CloudWatchAppender"
+                        awsLogStreamFlushPeriodInSeconds="5">
       <PatternLayout>
         <Pattern>%5p | %d{ISO8601}{UTC} | %t | %C | %M:%L | %m %ex %n</Pattern>
       </PatternLayout>

@@ -1,4 +1,22 @@
-package com.vi.aws.logging.log4jappenders;
+// Copyright (c) 2012 Virtual Instruments Corporation
+// Copyright (c) 2017 Luca Filipozzi
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//   http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+// Authored by: Mihailo Despotovic
+// Modified by: Luca Filipozzi
+
+package net.emyr.aws.logging.log4jappenders;
 
 import com.amazonaws.services.logs.AWSLogsClient;
 import com.amazonaws.services.logs.model.*;
@@ -16,11 +34,8 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.*;
 
-import static com.vi.aws.logging.log4jappenders.Config.*;
+import static net.emyr.aws.logging.log4jappenders.Config.*;
 
-/**
- * Created by mihailo.despotovic on 4/8/15.
- */
 @Plugin(name = "CloudWatchAppender", category = "Core", elementType = "appender", printObject = true)
 public class CloudWatchAppender extends AbstractAppender {
 
